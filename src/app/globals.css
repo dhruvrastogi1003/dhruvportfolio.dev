@@ -116,4 +116,34 @@
   .animate-marquee {
     animation: marquee 30s linear infinite;
   }
+
+  .skill-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      110deg,
+      transparent 25%,
+      hsl(var(--primary) / 0.5) 50%,
+      transparent 75%
+    );
+    transform: skewX(-25deg);
+    transition: left 0.7s;
+  }
+
+  .skill-card:hover .skill-shine::after {
+    left: 150%;
+  }
+
+  .skill-card:hover .skill-icon {
+     filter: drop-shadow(0 0 0.75rem hsl(var(--primary) / 0.5));
+  }
 }
