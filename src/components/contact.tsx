@@ -70,7 +70,7 @@ export function Contact() {
 
             <div className="border-t border-border pt-8">
               <h3 className="text-center font-semibold text-lg mb-4">
-                Connect on Social Media
+                you can connect to me on these platforms
               </h3>
               <div className="flex justify-center gap-4">
                 {socialLinks.map((social) => (
