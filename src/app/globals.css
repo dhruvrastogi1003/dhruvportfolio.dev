@@ -74,4 +74,11 @@
     -webkit-background-clip: text;
     color: transparent;
   }
+  .animated-text-gradient {
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+  }
+  .animated-text-gradient:hover {
+    background-position: right center;
+  }
 }

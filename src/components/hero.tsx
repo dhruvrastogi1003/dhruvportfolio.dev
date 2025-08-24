@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
+import { Download, Github, Linkedin } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -10,7 +10,7 @@ export function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">
-              <span className="text-gradient bg-gradient-to-r from-primary to-accent transition-all duration-300 hover:from-accent hover:to-primary">
+              <span className="text-gradient bg-gradient-to-r from-primary to-accent animated-text-gradient">
                 Dhruv Rastogi
               </span>
             </h1>
@@ -43,13 +43,13 @@ export function Hero() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="relative h-[300px] w-[300px] rounded-full overflow-hidden shadow-2xl shadow-primary/20 border-4 border-primary/50">
+            <div className="relative h-[300px] w-[300px]">
               <Image
                 src="https://placehold.co/300x300.png"
-                alt="Dhruv Rastogi headshot"
-                data-ai-hint="professional headshot"
+                alt="Dhruv Rastogi"
+                data-ai-hint="professional headshot transparent background"
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'contain' }}
                 priority
               />
             </div>
