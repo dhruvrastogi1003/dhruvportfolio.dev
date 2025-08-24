@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
@@ -31,21 +32,22 @@ export function Experience() {
   return (
     <Section id="experience" title="Work Experience">
       <div className="max-w-4xl mx-auto">
-        <div className="relative pl-6 before:absolute before:inset-y-0 before:w-1 before:bg-primary/20 before:left-2">
+        <div className="relative pl-6 before:absolute before:inset-y-0 before:w-1 before:bg-primary/20 before:left-0">
           {experiences.map((exp, index) => (
             <div key={index} className="mb-12 pl-8 relative group">
-              <div className="absolute left-[-4px] top-1.5 h-4 w-4 bg-primary rounded-full ring-8 ring-background transition-transform duration-300 group-hover:scale-110">
+              <div className="absolute left-[-24px] top-1.5 h-10 w-10 bg-primary rounded-full flex items-center justify-center ring-8 ring-background transition-transform duration-300 group-hover:scale-110">
+                <Briefcase className="h-5 w-5 text-primary-foreground" />
               </div>
-              <Card className="bg-secondary border-secondary-foreground/20 transition-all duration-300">
+              <Card className="bg-secondary border-border transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
                         <CardTitle className="text-foreground/90">{exp.role}</CardTitle>
-                        <CardDescription className="mt-1 text-accent-foreground/80">{exp.company}</CardDescription>
+                        <CardDescription className="mt-1 text-accent-foreground/80 font-medium">{exp.company}</CardDescription>
                     </div>
-                    <Badge variant="outline" className="hidden sm:block border-accent text-accent">{exp.period}</Badge>
+                    <Badge variant="outline" className="hidden sm:block border-primary/50 text-primary">{exp.period}</Badge>
                   </div>
-                   <CardDescription className="sm:hidden pt-2">{exp.period}</CardDescription>
+                   <CardDescription className="sm:hidden pt-2 text-primary/80 font-semibold">{exp.period}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{exp.description}</p>
