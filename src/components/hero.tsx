@@ -18,12 +18,12 @@ export function Hero() {
               Aspiring Frontend Developer | MCA Student
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105">
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-accent/20">
                 <Link href="#contact">
                   Get in Touch
                 </Link>
               </Button>
-               <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-105">
+               <Button asChild size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105">
                 <a href="/resume.pdf" download="Dhruv-Rastogi-Resume.pdf">
                   <Download className="mr-2 h-4 w-4" /> Download Resume
                 </a>
