@@ -15,7 +15,7 @@ export function About() {
               into a career where I can build seamless digital experiences.
             </p>
             <p className="text-muted-foreground text-lg mb-4">
-              With a strong foundation in React.js, Next.js, and TypeScript, I
+              As a Frontend Developer, I'm focused on crafting intuitive, responsive, and accessible web interfaces. With a strong foundation in React.js, Next.js, and TypeScript, I
               specialize in turning complex ideas into functional and elegant
               user interfaces. I thrive on solving challenges and am constantly
               seeking to learn and adapt to the latest industry trends and
