@@ -50,7 +50,7 @@ export function Experience() {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                        <CardTitle className="text-primary-foreground/90">{exp.role}</CardTitle>
+                        <CardTitle className="text-foreground/90">{exp.role}</CardTitle>
                         <CardDescription className="mt-1 text-accent">{exp.company}</CardDescription>
                     </div>
                     <Badge variant="outline" className="hidden sm:block border-accent text-accent">{exp.period}</Badge>

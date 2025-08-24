@@ -45,6 +45,8 @@ export function Contact() {
     toast({
         title: "Message Sent!",
         description: "Thank you for reaching out. I'll get back to you soon.",
+        variant: 'default',
+        className: 'bg-primary text-primary-foreground',
       });
     form.reset();
   }

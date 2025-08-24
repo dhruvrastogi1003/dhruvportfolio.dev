@@ -46,8 +46,8 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="#home" className="text-xl font-bold text-primary transition-colors hover:text-primary/80">
-          Dhruv Rastogi
+        <Link href="#home" className="text-xl font-bold transition-colors">
+          <span className="text-gradient bg-gradient-to-r from-primary to-accent">Dhruv Rastogi</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
@@ -66,8 +66,8 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left" className="bg-background">
               <div className="flex flex-col p-6 space-y-6">
-                 <Link href="#home" className="text-xl font-bold text-primary" onClick={() => setIsMobileMenuOpen(false)}>
-                    Dhruv Rastogi
+                 <Link href="#home" className="text-xl font-bold" onClick={() => setIsMobileMenuOpen(false)}>
+                    <span className="text-gradient bg-gradient-to-r from-primary to-accent">Dhruv Rastogi</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (
