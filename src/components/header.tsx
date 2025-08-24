@@ -51,7 +51,7 @@ export function Header() {
             "text-xl font-bold transition-opacity duration-300",
             isScrolled ? "opacity-100" : "opacity-0"
             )}>
-          <span className="text-gradient bg-gradient-to-r from-primary to-accent">Dhruv Rastogi</span>
+          <span className="shine">Dhruv Rastogi</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
@@ -71,7 +71,7 @@ export function Header() {
             <SheetContent side="left" className="bg-background">
               <div className="flex flex-col p-6 space-y-6">
                  <Link href="#home" className="text-xl font-bold" onClick={() => setIsMobileMenuOpen(false)}>
-                    <span className="text-gradient bg-gradient-to-r from-primary to-accent">Dhruv Rastogi</span>
+                    <span className="shine">Dhruv Rastogi</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (
