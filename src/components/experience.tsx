@@ -7,9 +7,16 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Briefcase } from 'lucide-react';
 
 const experiences = [
+  {
+    role: 'Web Full Stack Developer Intern',
+    company: 'AICTE by EduSkills (Virtual)',
+    period: 'April 2025 - June 2025',
+    description:
+      'A virtual internship focused on full-stack web development, gaining hands-on experience with modern technologies.',
+    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+  },
   {
     role: 'Senior Frontend Developer',
     company: 'Innovate Corp.',
@@ -17,14 +24,6 @@ const experiences = [
     description:
       'Led the development of a new client-facing dashboard using React and TypeScript. Mentored junior developers and conducted code reviews to maintain high code quality.',
     tags: ['React.js', 'TypeScript', 'Next.js', 'Redux'],
-  },
-  {
-    role: 'Frontend Developer',
-    company: 'Tech Solutions LLC',
-    period: 'Jun 2018 - Dec 2020',
-    description:
-      'Developed and maintained responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality products.',
-    tags: ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Firebase'],
   },
 ];
 
