@@ -20,7 +20,7 @@ const educationHistory = [
   {
     degree: 'Bachelor of Computer Application',
     institution: 'Invertis University, Bareilly, Uttar Pradesh, India',
-    period: '2021 - 2024',
+    period: '2024',
     description:
       'Completed a Bachelor\'s in Computer Applications, graduating with 62%.',
   },
