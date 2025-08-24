@@ -18,12 +18,12 @@ const experiences = [
     tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
   },
   {
-    role: 'Senior Frontend Developer',
-    company: 'Innovate Corp.',
-    period: 'Jan 2021 - Present',
+    role: 'Frontend Developer Intern',
+    company: 'Datopic Technology Private limited (Onsite)',
+    period: 'Nov 2023 - Mar 2024',
     description:
-      'Led the development of a new client-facing dashboard using React and TypeScript. Mentored junior developers and conducted code reviews to maintain high code quality.',
-    tags: ['React.js', 'TypeScript', 'Next.js', 'Redux'],
+      'Gained practical experience in frontend development, working on real-world projects in an onsite environment, contributing to the user interface and overall user experience.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'React.js'],
   },
 ];
 
