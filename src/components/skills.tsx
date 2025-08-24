@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { SKILLS } from '@/lib/data';
 
 const SkillCard = ({ skill }: { skill: (typeof SKILLS)[0] }) => (
-  <Card className="flex flex-col items-center justify-center p-6 text-center transition-all duration-300 hover:scale-105 w-40 h-40 shrink-0">
+  <Card className="flex flex-col items-center justify-center p-6 text-center transition-all duration-300 w-40 h-40 shrink-0">
     <CardHeader className="p-0">
       <div className="relative">
         <skill.icon className="h-12 w-12 mx-auto text-primary mb-4 transition-all duration-300" />
