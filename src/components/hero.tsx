@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Download, Github, Linkedin } from 'lucide-react';
+import { Download, Github, Linkedin, Instagram } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -38,6 +38,11 @@ export function Hero() {
               <Link href="#" aria-label="LinkedIn">
                  <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
                     <Linkedin className="h-6 w-6" />
+                </Button>
+              </Link>
+              <Link href="#" aria-label="Instagram">
+                <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Instagram className="h-6 w-6" />
                 </Button>
               </Link>
             </div>

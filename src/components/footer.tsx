@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AiTool } from '@/components/ai-tool';
 
@@ -27,6 +27,11 @@ export function Footer() {
              <Link href="#" aria-label="Twitter">
               <Button variant="ghost" size="icon">
                 <Twitter className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="#" aria-label="Instagram">
+              <Button variant="ghost" size="icon">
+                <Instagram className="h-5 w-5" />
               </Button>
             </Link>
           </div>
