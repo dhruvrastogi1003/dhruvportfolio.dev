@@ -1,3 +1,4 @@
+
 import { Section } from '@/components/section';
 import {
   Card,
@@ -15,14 +16,14 @@ const educationHistory = [
     institution: 'Invertis University, Bareilly, Uttar Pradesh, India',
     period: '2024 - 2026',
     description:
-      'Currently pursuing a Master\'s degree in Computer Application with a current score of 72%.',
+      "Currently pursuing a Master's degree in Computer Application with a current score of 72%.",
   },
   {
     degree: 'Bachelor of Computer Application',
     institution: 'Invertis University, Bareilly, Uttar Pradesh, India',
     period: '2024',
     description:
-      'Completed a Bachelor\'s in Computer Applications, graduating with 62%.',
+      "Completed a Bachelor's in Computer Applications, graduating with 62%.",
   },
   {
     degree: 'Intermediate',
