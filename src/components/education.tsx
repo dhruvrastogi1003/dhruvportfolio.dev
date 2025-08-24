@@ -11,20 +11,36 @@ import { GraduationCap } from 'lucide-react';
 
 const educationHistory = [
   {
-    degree: 'Master of Science in Computer Science',
-    institution: 'Stanford University',
-    period: '2015 - 2017',
+    degree: 'Master of Computer Application',
+    institution: 'Invertis University',
+    period: '2024 - 2026',
     description:
-      'Focused on artificial intelligence and machine learning, completing a thesis on natural language processing.',
-    tags: ['AI', 'Machine Learning', 'NLP', 'Python'],
+      'Currently pursuing a Master\'s degree with a focus on advanced computer science concepts and application development.',
+    tags: ['MCA', 'Computer Science', 'Application Development'],
   },
   {
-    degree: 'Bachelor of Science in Computer Science',
-    institution: 'Massachusetts Institute of Technology (MIT)',
-    period: '2011 - 2015',
+    degree: 'Bachelor of Computer Application',
+    institution: 'Invertis University',
+    period: '2021 - 2024',
     description:
-      'Graduated with honors. Active member of the coding club and contributed to several open-source projects.',
-    tags: ['Data Structures', 'Algorithms', 'Web Development', 'Java'],
+      'Completed a comprehensive bachelor\'s program covering foundational and advanced topics in computer applications.',
+    tags: ['BCA', 'Web Development', 'Database Management', 'Programming'],
+  },
+  {
+    degree: 'Intermediate',
+    institution: 'National Institute of Open Schooling',
+    period: '2021',
+    description:
+      'Completed intermediate education, building a strong foundation for higher studies in technology.',
+    tags: ['NIOS', 'Science Stream'],
+  },
+  {
+    degree: 'High School',
+    institution: 'Girish Prasad Memorial College',
+    period: '2019',
+    description:
+      'Completed high school education with a focus on foundational science and mathematics subjects.',
+    tags: ['High School', 'Science'],
   },
 ];
 
