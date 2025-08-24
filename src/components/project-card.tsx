@@ -50,7 +50,7 @@ export function ProjectCard({
         <CardDescription>{description}</CardDescription>
       </CardContent>
       <CardFooter className="flex justify-start gap-4">
-        <Button asChild variant="outline">
+        {/* <Button asChild variant="outline">
           <Link href={demo} target="_blank" rel="noopener noreferrer">
             <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
           </Link>
@@ -59,7 +59,7 @@ export function ProjectCard({
           <Link href={github} target="_blank" rel="noopener noreferrer">
             <Github className="mr-2 h-4 w-4" /> GitHub
           </Link>
-        </Button>
+        </Button> */}
       </CardFooter>
     </Card>
   );
