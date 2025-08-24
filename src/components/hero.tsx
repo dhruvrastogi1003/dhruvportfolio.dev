@@ -15,7 +15,7 @@ export function Hero() {
               </span>
             </h1>
             <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-xl">
-              A passionate Frontend Developer specializing in creating modern, responsive, and user-friendly web applications with React.js.
+              I am a dedicated and passionate frontend developer with a knack for creating beautiful, intuitive, and highly performant web applications. With a strong foundation in React.js and a love for clean, efficient code, I strive to build seamless user experiences.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105">
