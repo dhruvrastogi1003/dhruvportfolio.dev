@@ -5,20 +5,20 @@ import Link from 'next/link';
 import { Section } from '@/components/section';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, Phone, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
 
 const contactDetails = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'dhruv.rastogi@example.com',
-    href: 'mailto:dhruv.rastogi@example.com',
+    value: 'dhruv10.rastogi@gmail.com',
+    href: 'mailto:dhruv10.rastogi@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 (123) 456-7890',
-    href: 'tel:+11234567890',
+    value: '+91 9870688238',
+    href: 'tel:+919870688238',
   },
 ];
 
@@ -31,11 +31,6 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: '#',
-  },
-  {
-    icon: Twitter,
-    label: 'Twitter',
     href: '#',
   },
   {
