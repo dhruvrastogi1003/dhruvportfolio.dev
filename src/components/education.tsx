@@ -57,9 +57,9 @@ export function Education() {
                         <CardTitle className="text-foreground/90">{edu.degree}</CardTitle>
                         <CardDescription className="mt-1 text-primary/80 font-medium">{edu.institution}</CardDescription>
                     </div>
-                    <Badge variant="outline" className="hidden sm:block border-accent text-accent">{edu.period}</Badge>
+                    <Badge variant="outline" className="hidden sm:block border-primary/50 text-primary">{edu.period}</Badge>
                   </div>
-                   <CardDescription className="sm:hidden pt-2">{edu.period}</CardDescription>
+                   <CardDescription className="sm:hidden pt-2 text-primary/80 font-semibold">{edu.period}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{edu.description}</p>
