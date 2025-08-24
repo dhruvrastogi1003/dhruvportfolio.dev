@@ -18,7 +18,7 @@ export function Hero() {
               Aspiring Frontend Developer | MCA Student
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105">
+              <Button asChild size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105">
                 <Link href="#contact">
                   Get in Touch
                 </Link>
@@ -48,7 +48,7 @@ export function Hero() {
             </div>
           </div>
           <div className="order-1 md:order-2 flex justify-center">
-             <div className="relative w-[300px] h-[300px] md:w-[300px] md:h-[300px]">
+             <div className="relative w-[300px] h-[300px]">
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
                     <Image
                         src="https://placehold.co/300x300.png"
