@@ -8,9 +8,11 @@ export function About() {
         <Card className="bg-card border-border shadow-lg transition-all duration-300 hover:shadow-primary/20">
           <CardContent className="p-8 md:p-10">
             <p className="text-muted-foreground text-lg">
-              Frontend Developer focused on crafting intuitive, responsive, and
-              accessible web interfaces. Passionate about clean code and better
-              user experiences.
+              Hi, I’m Dhruv — a frontend developer focused on building fast,
+              responsive, and accessible web applications using HTML, CSS,
+              JavaScript, and React.js. I turn complex ideas into intuitive
+              user experiences, with clean code and attention to detail. Always
+              learning, always improving.
             </p>
           </CardContent>
         </Card>
