@@ -1,0 +1,75 @@
+import { Codepen, Component, Database, Github, Paintbrush } from 'lucide-react';
+import type { Icon as LucideIcon } from 'lucide-react';
+
+export const SKILLS: { name: string; icon: LucideIcon }[] = [
+  { name: 'React.js', icon: Component },
+  { name: 'JavaScript', icon: Codepen },
+  { name: 'HTML5', icon: Codepen },
+  { name: 'CSS3', icon: Paintbrush },
+  { name: 'Next.js', icon: Component },
+  { name: 'Firebase', icon: Database },
+];
+
+export const PROJECTS = [
+  {
+    title: 'E-commerce Platform',
+    description: 'A full-featured e-commerce site with product listings, cart functionality, and a secure checkout process.',
+    tags: ['React.js', 'Next.js', 'Firebase', 'Tailwind CSS'],
+    image: 'https://placehold.co/600x400.png',
+    demo: '#',
+    github: '#',
+    category: 'Web App',
+    'data-ai-hint': 'ecommerce platform',
+  },
+  {
+    title: 'Portfolio Website',
+    description: 'A personal portfolio to showcase my skills and projects, built with a focus on clean design and user experience.',
+    tags: ['React.js', 'Next.js', 'Tailwind CSS'],
+    image: 'https://placehold.co/600x400.png',
+    demo: '#',
+    github: '#',
+    category: 'Website',
+    'data-ai-hint': 'portfolio website',
+  },
+  {
+    title: 'Task Management App',
+    description: 'A productivity app for organizing tasks, setting deadlines, and tracking progress with an intuitive interface.',
+    tags: ['React.js', 'Firebase', 'CSS'],
+    image: 'https://placehold.co/600x400.png',
+    demo: '#',
+    github: '#',
+    category: 'Web App',
+    'data-ai-hint': 'task management',
+  },
+  {
+    title: 'Blog Platform',
+    description: 'A content management system for creating and publishing articles, with features for comments and social sharing.',
+    tags: ['React.js', 'Next.js', 'Firebase'],
+    image: 'https://placehold.co/600x400.png',
+    demo: '#',
+    github: '#',
+    category: 'Website',
+    'data-ai-hint': 'blog platform',
+  },
+];
+
+export const RECOMMENDATIONS = [
+  {
+    quote:
+      "Dhruv is a highly skilled frontend developer with a keen eye for detail. His ability to translate complex designs into pixel-perfect, responsive websites is truly impressive. He's a valuable asset to any team.",
+    name: 'Jane Doe',
+    title: 'Project Manager at Tech Solutions',
+  },
+  {
+    quote:
+      "Working with Dhruv was a pleasure. He is not only proficient in modern web technologies but also an excellent communicator. He consistently delivered high-quality work on time and exceeded our expectations.",
+    name: 'John Smith',
+    title: 'Lead Designer at Creative Agency',
+  },
+  {
+    quote:
+      "Dhruv's expertise in React.js was instrumental in the success of our project. He is a proactive problem-solver who is always ready to take on new challenges. I would highly recommend him.",
+    name: 'Emily White',
+    title: 'Senior Software Engineer at Innovate Corp',
+  },
+];

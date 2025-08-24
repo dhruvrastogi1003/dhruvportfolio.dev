@@ -1,0 +1,59 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowDown, Github, Linkedin } from 'lucide-react';
+
+export function Hero() {
+  return (
+    <section id="home" className="py-20 md:py-32 bg-card">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary font-headline tracking-tight">
+              Dhruv Rastogi
+            </h1>
+            <p className="mt-4 text-lg md:text-xl text-muted-foreground">
+              A passionate Frontend Developer specializing in creating modern, responsive, and user-friendly web applications with React.js.
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Link href="#contact">
+                  Get in Touch
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href="#projects">
+                  View My Work <ArrowDown className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+            <div className="mt-8 flex gap-4">
+               <Link href="#" aria-label="GitHub">
+                <Button variant="ghost" size="icon">
+                    <Github className="h-6 w-6" />
+                </Button>
+              </Link>
+              <Link href="#" aria-label="LinkedIn">
+                 <Button variant="ghost" size="icon">
+                    <Linkedin className="h-6 w-6" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="relative h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden shadow-lg border-4 border-primary">
+              <Image
+                src="https://placehold.co/400x400.png"
+                alt="Dhruv Rastogi headshot"
+                data-ai-hint="professional headshot"
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
