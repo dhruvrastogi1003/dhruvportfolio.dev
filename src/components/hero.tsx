@@ -10,7 +10,7 @@ export function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">
-              <span className="text-gradient bg-gradient-to-r from-primary to-accent animated-text-gradient">
+              <span className="shine">
                 Dhruv Rastogi
               </span>
             </h1>
