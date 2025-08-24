@@ -12,14 +12,14 @@ import { GraduationCap } from 'lucide-react';
 const educationHistory = [
   {
     degree: 'Master of Computer Application',
-    institution: 'Invertis University',
+    institution: 'Invertis University, Bareilly, Uttar Pradesh, India',
     period: '2024 - 2026',
     description:
       'Currently pursuing a Master\'s degree in Computer Application with a current score of 72%.',
   },
   {
     degree: 'Bachelor of Computer Application',
-    institution: 'Invertis University',
+    institution: 'Invertis University, Bareilly, Uttar Pradesh, India',
     period: '2021 - 2024',
     description:
       'Completed a Bachelor\'s in Computer Applications, graduating with 62%.',
@@ -33,7 +33,7 @@ const educationHistory = [
   },
   {
     degree: 'High School',
-    institution: 'Girish Prasad Memorial College',
+    institution: 'Girish Prasad Memorial College, Bareilly, Uttar Pradesh, India',
     period: '2019',
     description:
       'Completed high school education with a focus on foundational subjects, achieving 67%.',
