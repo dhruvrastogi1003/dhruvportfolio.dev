@@ -13,17 +13,22 @@ const SkillCard = ({ skill }: { skill: (typeof SKILLS)[0] }) => (
   </Card>
 );
 
+const SkillList = () => (
+    <div className="flex animate-marquee shrink-0">
+        {SKILLS.map((skill, index) => (
+        <div key={index} className="px-4">
+            <SkillCard skill={skill} />
+        </div>
+        ))}
+    </div>
+);
+
 export function Skills() {
   return (
     <Section id="skills" title="My Skills" className="pt-0">
-      <div className="relative w-full overflow-hidden">
-        <div className="flex animate-marquee">
-          {SKILLS.concat(SKILLS).map((skill, index) => (
-            <div key={index} className="px-4">
-              <SkillCard skill={skill} />
-            </div>
-          ))}
-        </div>
+      <div className="relative w-full overflow-hidden flex flex-nowrap">
+        <SkillList />
+        <SkillList />
       </div>
     </Section>
   );
