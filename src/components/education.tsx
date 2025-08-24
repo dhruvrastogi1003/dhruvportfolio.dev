@@ -16,7 +16,6 @@ const educationHistory = [
     period: '2024 - 2026',
     description:
       'Currently pursuing a Master\'s degree in Computer Application with a current score of 72%.',
-    tags: ['MCA', 'Computer Science', 'Application Development'],
   },
   {
     degree: 'Bachelor of Computer Application',
@@ -24,7 +23,6 @@ const educationHistory = [
     period: '2021 - 2024',
     description:
       'Completed a Bachelor\'s in Computer Applications, graduating with 62%.',
-    tags: ['BCA', 'Web Development', 'Database Management', 'Programming'],
   },
   {
     degree: 'Intermediate',
@@ -32,7 +30,6 @@ const educationHistory = [
     period: '2021',
     description:
       'Completed intermediate education with commerce and computer, scoring 71%.',
-    tags: ['NIOS', 'Commerce', 'Computer'],
   },
   {
     degree: 'High School',
@@ -40,7 +37,6 @@ const educationHistory = [
     period: '2019',
     description:
       'Completed high school education with a focus on foundational subjects, achieving 67%.',
-    tags: ['High School', 'Science'],
   },
 ];
 
@@ -59,7 +55,7 @@ export function Education() {
                   <div className="flex justify-between items-start">
                     <div>
                         <CardTitle className="text-foreground/90">{edu.degree}</CardTitle>
-                        <CardDescription className="mt-1 text-accent">{edu.institution}</CardDescription>
+                        <CardDescription className="mt-1 text-primary/80 font-medium">{edu.institution}</CardDescription>
                     </div>
                     <Badge variant="outline" className="hidden sm:block border-accent text-accent">{edu.period}</Badge>
                   </div>
