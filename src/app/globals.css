@@ -87,9 +87,9 @@
   .shine {
     background: linear-gradient(
       110deg,
-      #64748b 25%,
+      #9ca3af 25%,
       #ffffff 50%,
-      #64748b 75%
+      #9ca3af 75%
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;
@@ -125,9 +125,9 @@
   .shine-icon {
     background: linear-gradient(
       110deg,
-      hsl(var(--primary)) 25%,
-      #ffffff 50%,
-      hsl(var(--primary)) 75%
+      hsl(var(--primary) / 0.8) 25%,
+      hsl(var(--primary)) 50%,
+      hsl(var(--primary) / 0.8) 75%
     );
     background-size: 200% 100%;
     color: transparent;
