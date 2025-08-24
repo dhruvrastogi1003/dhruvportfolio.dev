@@ -32,7 +32,7 @@ export function ProjectCard({
   'data-ai-hint': dataAiHint,
 }: ProjectCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-2">
+    <Card className="flex flex-col overflow-hidden transition-all duration-300">
       <div className="relative h-52 w-full">
         <Image src={image} alt={title} data-ai-hint={dataAiHint} fill style={{ objectFit: 'cover' }} />
       </div>

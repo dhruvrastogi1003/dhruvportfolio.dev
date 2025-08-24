@@ -54,7 +54,7 @@ export function Education() {
               <div className="absolute left-[-24px] top-1.5 h-10 w-10 bg-primary rounded-full flex items-center justify-center ring-8 ring-secondary transition-transform duration-300 group-hover:scale-110">
                 <GraduationCap className="h-5 w-5 text-primary-foreground" />
               </div>
-              <Card className="bg-card border-border transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/20 group-hover:-translate-y-1">
+              <Card className="bg-card border-border transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>

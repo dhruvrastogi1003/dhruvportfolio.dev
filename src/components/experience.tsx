@@ -45,7 +45,7 @@ export function Experience() {
             <div key={index} className="mb-12 pl-8 relative group">
               <div className="absolute left-[-4px] top-1.5 h-4 w-4 bg-primary rounded-full ring-8 ring-background transition-transform duration-300 group-hover:scale-110">
               </div>
-              <Card className="bg-secondary border-secondary-foreground/20 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/20 group-hover:-translate-y-1">
+              <Card className="bg-secondary border-secondary-foreground/20 transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
