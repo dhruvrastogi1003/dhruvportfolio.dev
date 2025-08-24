@@ -49,7 +49,6 @@ export function Hero() {
           </div>
           <div className="order-1 md:order-2 flex justify-center">
              <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px]">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-accent opacity-50 blur-2xl animate-pulse"></div>
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
                     <Image
                         src="https://placehold.co/400x400.png"
