@@ -67,13 +67,6 @@ export function Education() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{edu.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {edu.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
                 </CardContent>
               </Card>
             </div>
