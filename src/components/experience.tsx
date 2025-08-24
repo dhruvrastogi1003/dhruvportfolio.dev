@@ -26,14 +26,6 @@ const experiences = [
       'Developed and maintained responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality products.',
     tags: ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Firebase'],
   },
-  {
-    role: 'Junior Web Developer',
-    company: 'Creative Agency',
-    period: 'Jul 2017 - May 2018',
-    description:
-      'Assisted in the development of websites and landing pages. Gained hands-on experience with modern web technologies and best practices.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'jQuery'],
-  },
 ];
 
 export function Experience() {
