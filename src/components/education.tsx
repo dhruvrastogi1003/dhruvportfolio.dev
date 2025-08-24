@@ -31,8 +31,8 @@ const educationHistory = [
     institution: 'National Institute of Open Schooling',
     period: '2021',
     description:
-      'Completed intermediate education, building a strong foundation for higher studies in technology with a score of 71%.',
-    tags: ['NIOS', 'Science Stream'],
+      'Completed intermediate education with commerce and computer, building a strong foundation for higher studies with a score of 71%.',
+    tags: ['NIOS', 'Commerce', 'Computer'],
   },
   {
     degree: 'High School',
