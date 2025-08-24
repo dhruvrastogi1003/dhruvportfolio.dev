@@ -1,15 +1,17 @@
-import { Codepen, Component, Database, Paintbrush } from 'lucide-react';
+import { Codepen, Component, Database, Paintbrush, FileCode, GitBranch, Github, FileText } from 'lucide-react';
 import type { Icon as LucideIcon } from 'lucide-react';
 
 export const SKILLS: { name: string; icon: LucideIcon }[] = [
-  { name: 'React.js', icon: Component },
-  { name: 'TypeScript', icon: Codepen },
-  { name: 'Next.js', icon: Component },
+  { name: 'HTML', icon: FileCode },
+  { name: 'CSS', icon: Paintbrush },
+  { name: 'Bootstrap', icon: Component },
   { name: 'JavaScript', icon: Codepen },
-  { name: 'HTML5', icon: Codepen },
-  { name: 'CSS3', icon: Paintbrush },
-  { name: 'Firebase', icon: Database },
-  { name: 'Git & GitHub', icon: Codepen },
+  { name: 'React.js', icon: Component },
+  { name: 'Material UI', icon: Component },
+  { name: 'Git', icon: GitBranch },
+  { name: 'GitHub', icon: Github },
+  { name: 'MS Word', icon: FileText },
+  { name: 'MS Excel', icon: FileText },
 ];
 
 export const PROJECTS = [
