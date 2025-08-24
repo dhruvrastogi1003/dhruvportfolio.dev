@@ -25,7 +25,7 @@ export function Projects() {
       : PROJECTS.filter((project) => project.category === activeFilter);
 
   return (
-    <Section id="projects" title="My Projects" className="bg-secondary">
+    <Section id="projects" title="My Projects" className="bg-secondary pt-0">
        <div className="flex justify-center flex-wrap gap-2 mb-12">
         {projectCategories.map((category) => (
           <Button
