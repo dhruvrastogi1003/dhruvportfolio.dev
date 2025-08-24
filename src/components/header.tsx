@@ -47,7 +47,10 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="#home" className="text-xl font-bold transition-colors">
+        <Link href="#home" className={cn(
+            "text-xl font-bold transition-opacity duration-300",
+            isScrolled ? "opacity-100" : "opacity-0"
+            )}>
           <span className="text-gradient bg-gradient-to-r from-primary to-accent">Dhruv Rastogi</span>
         </Link>
 
