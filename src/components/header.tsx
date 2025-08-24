@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -10,10 +10,9 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
-  { href: '#recommendations', label: 'Recommendations' },
+  { href: '#experience', label: 'Experience' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -32,7 +31,7 @@ export function Header() {
   const NavLink = ({ href, label }: { href: string; label: string }) => (
     <Link
       href={href}
-      className="text-sm font-medium transition-colors hover:text-primary"
+      className="text-sm font-medium transition-colors text-foreground/60 hover:text-primary"
       onClick={() => setIsMobileMenuOpen(false)}
     >
       {label}
@@ -47,7 +46,7 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="#home" className="text-xl font-bold text-primary">
+        <Link href="#home" className="text-xl font-bold text-primary transition-colors hover:text-primary/80">
           Dhruv Rastogi
         </Link>
 
@@ -65,7 +64,7 @@ export function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
+            <SheetContent side="left" className="bg-background">
               <div className="flex flex-col p-6 space-y-6">
                  <Link href="#home" className="text-xl font-bold text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                     Dhruv Rastogi

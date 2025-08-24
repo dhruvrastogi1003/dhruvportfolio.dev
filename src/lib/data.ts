@@ -1,13 +1,15 @@
-import { Codepen, Component, Database, Github, Paintbrush } from 'lucide-react';
+import { Codepen, Component, Database, Paintbrush } from 'lucide-react';
 import type { Icon as LucideIcon } from 'lucide-react';
 
 export const SKILLS: { name: string; icon: LucideIcon }[] = [
   { name: 'React.js', icon: Component },
+  { name: 'TypeScript', icon: Codepen },
+  { name: 'Next.js', icon: Component },
   { name: 'JavaScript', icon: Codepen },
   { name: 'HTML5', icon: Codepen },
   { name: 'CSS3', icon: Paintbrush },
-  { name: 'Next.js', icon: Component },
   { name: 'Firebase', icon: Database },
+  { name: 'Git & GitHub', icon: Codepen },
 ];
 
 export const PROJECTS = [
@@ -50,26 +52,5 @@ export const PROJECTS = [
     github: '#',
     category: 'Website',
     'data-ai-hint': 'blog platform',
-  },
-];
-
-export const RECOMMENDATIONS = [
-  {
-    quote:
-      "Dhruv is a highly skilled frontend developer with a keen eye for detail. His ability to translate complex designs into pixel-perfect, responsive websites is truly impressive. He's a valuable asset to any team.",
-    name: 'Jane Doe',
-    title: 'Project Manager at Tech Solutions',
-  },
-  {
-    quote:
-      "Working with Dhruv was a pleasure. He is not only proficient in modern web technologies but also an excellent communicator. He consistently delivered high-quality work on time and exceeded our expectations.",
-    name: 'John Smith',
-    title: 'Lead Designer at Creative Agency',
-  },
-  {
-    quote:
-      "Dhruv's expertise in React.js was instrumental in the success of our project. He is a proactive problem-solver who is always ready to take on new challenges. I would highly recommend him.",
-    name: 'Emily White',
-    title: 'Senior Software Engineer at Innovate Corp',
   },
 ];
