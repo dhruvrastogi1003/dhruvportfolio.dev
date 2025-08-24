@@ -1,122 +1,97 @@
+
 'use client';
 
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
-import { z } from 'zod';
+import Link from 'next/link';
 import { Section } from '@/components/section';
 import { Button } from '@/components/ui/button';
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 import { Card, CardContent } from '@/components/ui/card';
-import { User, Mail, MessageSquare } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: 'Name must be at least 2 characters.',
-  }),
-  email: z.string().email({
-    message: 'Please enter a valid email address.',
-  }),
-  message: z.string().min(10, {
-    message: 'Message must be at least 10 characters.',
-  }),
-});
+const contactDetails = [
+  {
+    icon: Mail,
+    label: 'Email',
+    value: 'dhruv.rastogi@example.com',
+    href: 'mailto:dhruv.rastogi@example.com',
+  },
+  {
+    icon: Phone,
+    label: 'Phone',
+    value: '+1 (123) 456-7890',
+    href: 'tel:+11234567890',
+  },
+];
+
+const socialLinks = [
+  {
+    icon: Github,
+    label: 'GitHub',
+    href: '#',
+  },
+  {
+    icon: Linkedin,
+    label: 'LinkedIn',
+    href: '#',
+  },
+  {
+    icon: Twitter,
+    label: 'Twitter',
+    href: '#',
+  },
+  {
+    icon: Instagram,
+    label: 'Instagram',
+    href: '#',
+  },
+];
 
 export function Contact() {
-  const { toast } = useToast();
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: '',
-      email: '',
-      message: '',
-    },
-  });
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-        variant: 'default',
-        className: 'bg-primary text-primary-foreground',
-      });
-    form.reset();
-  }
-
   return (
     <Section id="contact" title="Get in Touch">
       <div className="max-w-2xl mx-auto">
         <p className="text-center text-muted-foreground mb-8">
-          Have a project in mind or just want to say hi? Feel free to send me a message.
+          Have a project in mind or just want to say hi? Feel free to reach out.
         </p>
         <Card className="bg-card border-border shadow-lg">
-            <CardContent className="p-8">
-                <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                    <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel>Name</FormLabel>
-                        <FormControl>
-                            <div className="relative">
-                                <User className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                                <Input placeholder="Your Name" {...field} className="pl-10"/>
-                            </div>
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                    <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl>
-                           <div className="relative">
-                                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                                <Input placeholder="your.email@example.com" {...field} className="pl-10"/>
-                           </div>
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                    <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl>
-                            <div className="relative">
-                                <MessageSquare className="absolute left-3 top-4 h-5 w-5 text-muted-foreground" />
-                                <Textarea placeholder="Your message..." {...field} rows={6} className="pl-10"/>
-                            </div>
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                    <div className="text-center">
-                        <Button type="submit" size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/20">Send Message</Button>
-                    </div>
-                </form>
-                </Form>
-            </CardContent>
+          <CardContent className="p-8 space-y-8">
+            <div className="space-y-4">
+              {contactDetails.map((detail) => (
+                <div key={detail.label} className="flex items-center gap-4">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    <detail.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">{detail.label}</h3>
+                    <a
+                      href={detail.href}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {detail.value}
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="border-t border-border pt-8">
+              <h3 className="text-center font-semibold text-lg mb-4">
+                Connect on Social Media
+              </h3>
+              <div className="flex justify-center gap-4">
+                {socialLinks.map((social) => (
+                  <Link href={social.href} key={social.label} aria-label={social.label}>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="h-12 w-12 rounded-full transition-all duration-300 hover:scale-110 hover:bg-primary/10 hover:border-primary/50"
+                    >
+                      <social.icon className="h-6 w-6" />
+                    </Button>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </CardContent>
         </Card>
       </div>
     </Section>
