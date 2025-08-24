@@ -19,7 +19,7 @@ const experiences = [
   },
   {
     role: 'Frontend Developer Intern',
-    company: 'Datopic Technology Private limited, Noida, Uttar Pradesh, India (Onsite)',
+    company: 'Datopic Technology Private Limited, Noida, Uttar Pradesh, India (Onsite)',
     period: 'Nov 2023 - Mar 2024',
     description:
       'Gained practical experience in frontend development, working on real-world projects in an onsite environment, contributing to the user interface and overall user experience.',
