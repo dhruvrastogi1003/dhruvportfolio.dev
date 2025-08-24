@@ -15,7 +15,7 @@ const educationHistory = [
     institution: 'Invertis University',
     period: '2024 - 2026',
     description:
-      'Currently pursuing a Master\'s degree with a focus on advanced computer science concepts and application development, holding a current score of 72%.',
+      'Currently pursuing a Master\'s degree in Computer Application with a current score of 72%.',
     tags: ['MCA', 'Computer Science', 'Application Development'],
   },
   {
@@ -23,7 +23,7 @@ const educationHistory = [
     institution: 'Invertis University',
     period: '2021 - 2024',
     description:
-      'Completed a comprehensive bachelor\'s program covering foundational and advanced topics in computer applications, graduating with 62%.',
+      'Completed a Bachelor\'s in Computer Applications, graduating with 62%.',
     tags: ['BCA', 'Web Development', 'Database Management', 'Programming'],
   },
   {
@@ -31,7 +31,7 @@ const educationHistory = [
     institution: 'National Institute of Open Schooling',
     period: '2021',
     description:
-      'Completed intermediate education with commerce and computer, building a strong foundation for higher studies with a score of 71%.',
+      'Completed intermediate education with commerce and computer, scoring 71%.',
     tags: ['NIOS', 'Commerce', 'Computer'],
   },
   {
@@ -39,7 +39,7 @@ const educationHistory = [
     institution: 'Girish Prasad Memorial College',
     period: '2019',
     description:
-      'Completed high school education with a focus on foundational science and mathematics subjects, achieving 67%.',
+      'Completed high school education with a focus on foundational subjects, achieving 67%.',
     tags: ['High School', 'Science'],
   },
 ];
