@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUpCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -43,7 +43,7 @@ export function ScrollToTop() {
       )}
       aria-label="Scroll to top"
     >
-      <ArrowUp className="h-6 w-6" />
+      <ArrowUpCircle className="h-6 w-6" />
     </Button>
   );
 }
