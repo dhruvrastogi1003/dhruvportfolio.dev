@@ -32,7 +32,7 @@ export function ProjectCard({
   'data-ai-hint': dataAiHint,
 }: ProjectCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden transition-all duration-300">
+    <Card className="flex flex-col overflow-hidden transition-all duration-300 h-full">
       <div className="relative h-52 w-full">
         <Image src={image} alt={title} data-ai-hint={dataAiHint} fill style={{ objectFit: 'cover' }} />
       </div>
@@ -49,18 +49,6 @@ export function ProjectCard({
       <CardContent className="flex-grow">
         <CardDescription>{description}</CardDescription>
       </CardContent>
-      <CardFooter className="flex justify-start gap-4">
-        {/* <Button asChild variant="outline">
-          <Link href={demo} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-          </Link>
-        </Button>
-        <Button asChild variant="outline">
-          <Link href={github} target="_blank" rel="noopener noreferrer">
-            <Github className="mr-2 h-4 w-4" /> GitHub
-          </Link>
-        </Button> */}
-      </CardFooter>
     </Card>
   );
 }
