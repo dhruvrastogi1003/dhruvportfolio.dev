@@ -16,6 +16,16 @@ export const SKILLS: { name: string; icon: LucideIcon }[] = [
 
 export const PROJECTS = [
   {
+    title: 'Datopic.ai Website',
+    description: 'Enhanced the Datopic.ai website by implementing new features and improving responsiveness. Optimized performance by resolving bugs and ensuring cross-browser compatibility. Created engaging animations using CSS to enhance user experience.',
+    tags: ['React.js', 'Next.js', 'Tailwind CSS', 'CSS Animations'],
+    image: 'https://placehold.co/600x400.png',
+    demo: '#',
+    github: '#',
+    category: 'Website',
+    'data-ai-hint': 'company website',
+  },
+  {
     title: 'Tic Tac Toe web game',
     description: 'A classic Tic Tac Toe game built with a clean interface, perfect for a quick match.',
     tags: ['HTML', 'CSS', 'JavaScript'],
