@@ -39,7 +39,7 @@ export function ScrollToTop() {
       onClick={scrollToTop}
       className={cn(
         'fixed bottom-8 right-8 h-12 w-12 rounded-full transition-all duration-300 hover:scale-110 hover:bg-primary/10 hover:border-primary/50',
-        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'
+        isVisible ? 'opacity-75 scale-100' : 'opacity-0 scale-0'
       )}
       aria-label="Scroll to top"
     >
