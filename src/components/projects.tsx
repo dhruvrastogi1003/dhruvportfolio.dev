@@ -1,30 +1,21 @@
 
 'use client';
 
-import { useState } from 'react';
 import { Section } from '@/components/section';
 import { ProjectCard } from '@/components/project-card';
 import { PROJECTS } from '@/lib/data';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
 
-const projectCategories = ['All', ...Array.from(new Set(PROJECTS.map((p) => p.category)))];
+const ProjectList = () => (
+    <div className="flex animate-marquee shrink-0">
+      {PROJECTS.map((project, index) => (
+        <div key={index} className="px-4 w-[350px]">
+          <ProjectCard {...project} />
+        </div>
+      ))}
+    </div>
+);
 
 export function Projects() {
-  const [activeFilter, setActiveFilter] = useState('All');
-
-  const filteredProjects =
-    activeFilter === 'All'
-      ? PROJECTS
-      : PROJECTS.filter((project) => project.category === activeFilter);
-
   return (
     <Section id="projects" title="My Projects" className="bg-secondary pt-0">
        {/* <div className="flex justify-center flex-wrap gap-2 mb-12">
@@ -44,24 +35,10 @@ export function Projects() {
           </Button>
         ))}
       </div> */}
-      <Carousel
-        opts={{
-          align: 'start',
-        }}
-        className="w-full max-w-6xl mx-auto"
-      >
-        <CarouselContent>
-          {PROJECTS.map((project, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-1 h-full">
-                <ProjectCard {...project} />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
-      </Carousel>
+       <div className="relative w-full overflow-hidden flex flex-nowrap">
+        <ProjectList />
+        <ProjectList />
+      </div>
     </Section>
   );
 }
