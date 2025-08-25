@@ -16,14 +16,14 @@ export const SKILLS: { name: string; icon: LucideIcon }[] = [
 
 export const PROJECTS = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce site with product listings, cart functionality, and a secure checkout process.',
-    tags: ['React.js', 'Next.js', 'Firebase', 'Tailwind CSS'],
+    title: 'Tic Tac Toe web game',
+    description: 'A classic Tic Tac Toe game built with a clean interface, perfect for a quick match.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
     image: 'https://placehold.co/600x400.png',
     demo: '#',
     github: '#',
     category: 'Web App',
-    'data-ai-hint': 'ecommerce platform',
+    'data-ai-hint': 'tic tac toe game',
   },
   {
     title: 'Portfolio Website',
