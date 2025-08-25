@@ -124,6 +124,10 @@
     animation: marquee 30s linear infinite;
   }
 
+  .animate-marquee-slow {
+    animation: marquee 60s linear infinite;
+  }
+  
   @keyframes fade-in-up {
     from {
       opacity: 0;

@@ -6,7 +6,7 @@ import { ProjectCard } from '@/components/project-card';
 import { PROJECTS } from '@/lib/data';
 
 const ProjectList = () => (
-    <div className="flex animate-marquee shrink-0">
+    <div className="flex animate-marquee-slow shrink-0">
       {PROJECTS.map((project, index) => (
         <div key={index} className="px-4 w-[350px]">
           <ProjectCard {...project} />
