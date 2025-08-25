@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -35,7 +36,7 @@ export function Hero() {
                     <Github className="h-6 w-6" />
                 </Button>
               </Link>
-              <Link href="#" aria-label="LinkedIn">
+              <Link href="https://linkedin.com/in/dhruvrastogi10" aria-label="LinkedIn">
                  <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
                     <Linkedin className="h-6 w-6" />
                 </Button>

@@ -31,7 +31,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: '#',
+    href: 'https://linkedin.com/in/dhruvrastogi10',
   },
   {
     icon: Instagram,
