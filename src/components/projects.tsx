@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -26,7 +27,7 @@ export function Projects() {
 
   return (
     <Section id="projects" title="My Projects" className="bg-secondary pt-0">
-       <div className="flex justify-center flex-wrap gap-2 mb-12">
+       {/* <div className="flex justify-center flex-wrap gap-2 mb-12">
         {projectCategories.map((category) => (
           <Button
             key={category}
@@ -42,7 +43,7 @@ export function Projects() {
             {category}
           </Button>
         ))}
-      </div>
+      </div> */}
       <Carousel
         opts={{
           align: 'start',
@@ -50,7 +51,7 @@ export function Projects() {
         className="w-full max-w-6xl mx-auto"
       >
         <CarouselContent>
-          {filteredProjects.map((project, index) => (
+          {PROJECTS.map((project, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1 h-full">
                 <ProjectCard {...project} />
