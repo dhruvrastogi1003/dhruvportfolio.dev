@@ -44,14 +44,14 @@ export function Contact() {
   return (
     <Section id="contact" title="Get in Touch">
       <div className="max-w-2xl mx-auto">
-        <p className="text-center text-muted-foreground mb-8">
+        <p className="text-center text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           Have a project in mind or just want to say hi? Feel free to reach out.
         </p>
-        <Card className="bg-card border-border shadow-lg">
+        <Card className="bg-card border-border shadow-lg animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <CardContent className="p-8 space-y-8">
             <div className="space-y-4">
-              {contactDetails.map((detail) => (
-                <div key={detail.label} className="flex items-center gap-4">
+              {contactDetails.map((detail, index) => (
+                <div key={detail.label} className="flex items-center gap-4 animate-fade-in-up" style={{ animationDelay: `${0.6 + index * 0.2}s` }}>
                   <div className="bg-primary/10 p-3 rounded-full">
                     <detail.icon className="h-6 w-6 text-primary" />
                   </div>
@@ -68,17 +68,18 @@ export function Contact() {
               ))}
             </div>
 
-            <div className="border-t border-border pt-8">
+            <div className="border-t border-border pt-8 animate-fade-in-up" style={{ animationDelay: '1s' }}>
               <h3 className="text-center font-semibold text-lg mb-4">
                 <span className="shine">Connect with me on social media</span>
               </h3>
               <div className="flex justify-center gap-4">
-                {socialLinks.map((social) => (
+                {socialLinks.map((social, index) => (
                   <Link href={social.href} key={social.label} aria-label={social.label}>
                     <Button
                       variant="outline"
                       size="icon"
-                      className="h-12 w-12 rounded-full transition-all duration-300 hover:scale-110 hover:bg-primary/10 hover:border-primary/50"
+                      className="h-12 w-12 rounded-full transition-all duration-300 hover:scale-110 hover:bg-primary/10 hover:border-primary/50 animate-fade-in-up"
+                      style={{ animationDelay: `${1.2 + index * 0.2}s` }}
                     >
                       <social.icon className="h-6 w-6" />
                     </Button>
