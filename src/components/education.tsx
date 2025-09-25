@@ -44,12 +44,15 @@ export function Education() {
   return (
     <Section id="education" title="Education" className="bg-secondary">
       <div className="max-w-4xl mx-auto">
-        <div className="relative pl-6 before:absolute before:top-5 before:bottom-0 before:w-1 before:bg-primary/20 before:left-0">
+        <div className="relative pl-6">
           {educationHistory.map((edu, index) => (
             <div key={index} className="mb-12 pl-8 relative group">
               <div className="absolute left-[-24px] top-1.5 h-10 w-10 bg-primary rounded-full flex items-center justify-center ring-8 ring-secondary transition-transform duration-300 group-hover:scale-110">
                 <GraduationCap className="h-5 w-5 text-primary-foreground" />
               </div>
+              {index < educationHistory.length - 1 && (
+                <div className="absolute left-0 top-5 bottom-[-3rem] w-1 bg-primary/20"></div>
+              )}
               <Card className="bg-card border-border transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
