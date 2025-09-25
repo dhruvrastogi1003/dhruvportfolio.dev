@@ -44,7 +44,7 @@ export function Education() {
   return (
     <Section id="education" title="Education" className="bg-secondary">
       <div className="max-w-4xl mx-auto">
-        <div className="relative pl-6 before:absolute before:inset-y-0 before:w-1 before:bg-primary/20 before:left-0">
+        <div className="relative pl-6 before:absolute before:top-5 before:bottom-0 before:w-1 before:bg-primary/20 before:left-0">
           {educationHistory.map((edu, index) => (
             <div key={index} className="mb-12 pl-8 relative group">
               <div className="absolute left-[-24px] top-1.5 h-10 w-10 bg-primary rounded-full flex items-center justify-center ring-8 ring-secondary transition-transform duration-300 group-hover:scale-110">
