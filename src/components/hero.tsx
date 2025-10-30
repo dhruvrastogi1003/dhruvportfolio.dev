@@ -48,21 +48,21 @@ export function Hero() {
               </Link>
             </div>
           </div>
-          <div className="order-1 md:order-2 flex justify-center">
-             <div className="relative w-[300px] h-[300px]">
-                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
-                    <Image
-                      src="https://raw.githubusercontent.com/dhruvrastogi1003/dhruvportfolio.dev/main/.idx/Dhruv-Pic-min.jpg"
-                        alt="Dhruv Rastogi"
-                        data-ai-hint="professional headshot transparent background"
-                        fill
-                        style={{ objectFit: 'cover' }}
-                        priority
-                        className="scale-105"
-                    />
-                </div>
-            </div>
-          </div>
+<div className="order-1 md:order-2 flex justify-center">
+  <div className="relative w-[300px] h-[300px]">
+    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
+      <Image
+        src="https://raw.githubusercontent.com/dhruvrastogi1003/dhruvportfolio.dev/main/.idx/Dhruv-Pic-min.jpg"
+        alt="Dhruv Rastogi"
+        data-ai-hint="professional headshot transparent background"
+        fill
+        style={{ objectFit: 'cover' }}
+        priority
+        className="scale-105"
+      />
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </section>
