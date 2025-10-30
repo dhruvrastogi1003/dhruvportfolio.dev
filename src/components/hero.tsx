@@ -41,7 +41,7 @@ export function Hero() {
                     <Linkedin className="h-6 w-6" />
                 </Button>
               </Link>
-              <Link href="#" aria-label="Instagram">
+              <Link href="https://www.instagram.com/_dhruv.rastogi_?igsh=dzF5OTNwd2M0bGNt&utm_source=qr" aria-label="Instagram">
                 <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-6 w-6" />
                 </Button>
