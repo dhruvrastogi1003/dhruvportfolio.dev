@@ -25,6 +25,7 @@ It highlights my journey, technical expertise, and creative work through a moder
 ## 📬 Contact
 
 If you'd like to collaborate or discuss opportunities, feel free to connect:
+
 **Email:** [dhruvrastogi1003@gmail.com](mailto:dhruvrastogi1003@gmail.com)
 
 **LinkedIn:** [linkedin.com/in/dhruv-rastogi](https://www.linkedin.com/in/dhruvrastogi10)
