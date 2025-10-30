@@ -48,7 +48,7 @@ export const PROJECTS = [
   {
     title: 'Task Management App',
     description: 'A productivity app for organizing tasks, setting deadlines, and tracking progress with an intuitive interface.',
-    tags: ['React.js', 'Firebase', 'CSS'],
+    tags: ['React.js', 'CSS'],
     image: 'https://placehold.co/600x400.png',
     demo: '#',
     github: '#',
@@ -58,7 +58,7 @@ export const PROJECTS = [
   {
     title: 'Blog Platform',
     description: 'A content management system for creating and publishing articles, with features for comments and social sharing.',
-    tags: ['React.js', 'Next.js', 'Firebase'],
+    tags: ['React.js', 'Next.js'],
     image: 'https://placehold.co/600x400.png',
     demo: '#',
     github: '#',
