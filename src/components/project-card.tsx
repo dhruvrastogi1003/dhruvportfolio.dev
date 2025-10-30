@@ -33,9 +33,6 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card className="flex flex-col overflow-hidden transition-all duration-300 h-full">
-      <div className="relative h-52 w-full">
-        <Image src={image} alt={title} data-ai-hint={dataAiHint} fill style={{ objectFit: 'cover' }} />
-      </div>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <div className="flex flex-wrap gap-2 pt-2">
