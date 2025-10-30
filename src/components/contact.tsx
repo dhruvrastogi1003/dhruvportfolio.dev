@@ -26,7 +26,7 @@ const socialLinks = [
   {
     icon: Github,
     label: 'GitHub',
-    href: '#',
+    href: 'https://github.com/dhruvrastogi1003',
   },
   {
     icon: Linkedin,
@@ -36,7 +36,7 @@ const socialLinks = [
   {
     icon: Instagram,
     label: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/_dhruv.rastogi_?igsh=dzF5OTNwd2M0bGNt&utm_source=qr',
   },
 ];
 
