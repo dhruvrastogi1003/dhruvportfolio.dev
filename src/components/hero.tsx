@@ -25,7 +25,7 @@ export function Hero() {
                 </Link>
               </Button>
                <Button asChild size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105">
-<a href="https://raw.githubusercontent.com/dhruvrastogi1003/dhruvportfolio.dev/main/.idx/Dhruv_Rastogi_CV.pdf" download="Dhruv-Rastogi-Resume.pdf">
+                 <a href="https://raw.githubusercontent.com/dhruvrastogi1003/dhruvportfolio.dev/main/.idx/Dhruv_Rastogi_CV.pdf" download="Dhruv-Rastogi-Resume.pdf">
                  <Download className="mr-2 h-4 w-4" /> Download Resume
                 </a>
               </Button>
