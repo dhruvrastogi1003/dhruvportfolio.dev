@@ -31,7 +31,7 @@ export function Hero() {
               </Button>
             </div>
             <div className="mt-8 flex gap-4">
-               <Link href="#" aria-label="GitHub">
+               <Link href="https://github.com/dhruvrastogi1003" aria-label="GitHub">
                 <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
                     <Github className="h-6 w-6" />
                 </Button>
