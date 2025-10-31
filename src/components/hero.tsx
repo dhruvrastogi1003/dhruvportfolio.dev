@@ -57,7 +57,7 @@ export function Hero() {
         data-ai-hint="professional headshot transparent background"
         fill
         style={{ objectFit: 'cover' }}
-        priority
+        {/* priority */}
         className="scale-105"
       />
     </div>
