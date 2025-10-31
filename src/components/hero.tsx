@@ -52,7 +52,7 @@ export function Hero() {
   <div className="relative w-[300px] h-[300px]">
     <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
       <Image
-        src="https://raw.githubusercontent.com/dhruvrastogi1003/dhruvportfolio.dev/main/.idx/Dhruv-Pic-min.jpg" alt="Dhruv Rastogi"/>
+        src=".idx/Dhruv-Pic-min.jpg" alt="Dhruv Rastogi"/>
         alt=""
         data-ai-hint="professional headshot transparent background"
         fill
