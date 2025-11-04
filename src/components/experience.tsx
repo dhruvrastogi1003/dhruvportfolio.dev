@@ -12,7 +12,7 @@ import { Briefcase } from 'lucide-react';
 const experiences = [
   {
     role: 'Web Full Stack Developer Intern',
-    company: 'AICTE by EduSkills (Virtual)',
+    company: 'AICTE by EduSkills Academy (Virtual)',
     period: 'April 2025 - June 2025',
     description:
       'A virtual internship focused on full-stack web development, gaining hands-on experience with modern technologies.',
