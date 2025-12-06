@@ -1,68 +1,102 @@
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Download, Github, Linkedin, Instagram } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Download, Github, Linkedin, Instagram } from "lucide-react";
 
 export function Hero() {
   return (
     <section id="home" className="py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* LEFT SIDE */}
           <div className="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">
-              <span className="shine">
-                Dhruv Rastogi
-              </span>
+              <span className="shine">Dhruv Rastogi</span>
             </h1>
+
             <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-xl">
               Aspiring Frontend Developer | MCA Student
             </p>
+
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105">
-                <Link href="#contact">
-                  Get in Touch
-                </Link>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105"
+              >
+                <Link href="#contact">Get in Touch</Link>
               </Button>
-               <Button asChild size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105">
-                 <a href="https://raw.githubusercontent.com/dhruvrastogi1003/dhruvportfolio.dev/main/.idx/Dhruv_Rastogi_CV.pdf" download="Dhruv-Rastogi-Resume.pdf">
-                 <Download className="mr-2 h-4 w-4" /> Download Resume
+
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105"
+              >
+                <a
+                  href="https://raw.githubusercontent.com/dhruvrastogi1003/dhruvportfolio.dev/main/.idx/Dhruv_Rastogi_CV.pdf"
+                  download="Dhruv-Rastogi-Resume.pdf"
+                >
+                  <Download className="mr-2 h-4 w-4" /> Download Resume
                 </a>
               </Button>
             </div>
+
             <div className="mt-8 flex gap-4">
-               <Link href="https://github.com/dhruvrastogi1003" aria-label="GitHub">
-                <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Github className="h-6 w-6" />
+              <Link href="https://github.com/dhruvrastogi1003" aria-label="GitHub">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Github className="h-6 w-6" />
                 </Button>
               </Link>
+
               <Link href="https://linkedin.com/in/dhruvrastogi10" aria-label="LinkedIn">
-                 <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Linkedin className="h-6 w-6" />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Linkedin className="h-6 w-6" />
                 </Button>
               </Link>
-              <Link href="https://www.instagram.com/_dhruv.rastogi_?igsh=dzF5OTNwd2M0bGNt&utm_source=qr" aria-label="Instagram">
-                <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary transition-colors">
+
+              <Link
+                href="https://www.instagram.com/_dhruv.rastogi_?igsh=dzF5OTNwd2M0bGNt&utm_source=qr"
+                aria-label="Instagram"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   <Instagram className="h-6 w-6" />
                 </Button>
               </Link>
             </div>
           </div>
-<div className="order-1 md:order-2 flex justify-center">
-  <div className="relative w-[300px] h-[300px]">
-    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
-      <Image
-        src=".idx/Dhruv-Pic-min.jpg" alt="Dhruv Rastogi"
-        alt=""
-        data-ai-hint="professional headshot transparent background"
-        fill
-        style={{ objectFit: 'cover' }}
-        {/* priority */}
-        className="scale-105"
-      />
-    </div>
-  </div>
-</div>
+
+          {/* RIGHT SIDE */}
+          <div className="order-1 md:order-2 flex justify-center">
+            <div className="relative w-[300px] h-[300px]">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
+                <Image
+                  src="/Dhruv-Pic.jpg"
+                  alt="Dhruv Rastogi"
+                  fill
+                  priority
+                 className="rounded-full fill-cover"
+                />
+
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
