@@ -6,7 +6,7 @@ export function Footer() {
         <div className="flex justify-center items-center">
           <div className="text-center">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()}2026 Dhruv Rastogi. All rights reserved.
+              &copy; {new Date().getFullYear()} Dhruv Rastogi. All rights reserved.
             </p>
           </div>
         </div>
