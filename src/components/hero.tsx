@@ -86,7 +86,7 @@ export function Hero() {
             <div className="relative w-[300px] h-[300px]">
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
                 <Image
-                  src="/Dhruv_Image.jpg"
+                  src="/Dhruv-Pic.jpggit "
                   alt="Dhruv Rastogi"
                   fill
                   priority
